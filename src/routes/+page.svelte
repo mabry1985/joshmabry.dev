@@ -14,7 +14,7 @@
         <li class="text-center text-primary text-lg lg:text-2xl my-1">Designer</li>
         <li class="text-center text-primary text-lg lg:text-2xl my-1">Artist</li>
       </ul>
-      <SocialIcons/>
+      <SocialIcons />
     </div>
   </div>
 </div>
