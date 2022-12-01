@@ -1,6 +1,5 @@
 const plugin = require('tailwindcss/plugin');
 
-
 /** @type {import('tailwindcss').Config} */
 
 const screenSizes = {
@@ -40,7 +39,7 @@ module.exports = {
 				'gray-200': 'var(--neutral-gray-200)',
 				'gray-300': 'var(--neutral-gray-300)',
 				'black-100': 'var(--neutral-black-100)',
-				'black-200': 'var(--neutral-black-200)',
+				'black-200': 'var(--neutral-black-200)'
 			},
 			gray: {
 				50: 'var(--gray-50)',
@@ -186,113 +185,113 @@ module.exports = {
 		}
 	},
 	plugins: [
-      plugin(function ({ addUtilities }) {
-              // `md` breakpoint.
-      const screenMediumMediaQuery = '@media (min-width: 769px)';
+		plugin(function ({ addUtilities }) {
+			// `md` breakpoint.
+			const screenMediumMediaQuery = '@media (min-width: 769px)';
 
-      // `lg` breakpoint.
-      const screenLargeMediaQuery = '@media (min-width: 1025px)';
+			// `lg` breakpoint.
+			const screenLargeMediaQuery = '@media (min-width: 1025px)';
 
-      const responsiveText = {
-        '.text-base-responsive': {
-          fontSize: 'var(--fs-base)',
-          lineHeight: 'var(--lh-base)',
-          [screenMediumMediaQuery]: {
-            fontSize: 'var(--fs-base-medium)',
-            lineHeight: 'var(--lh-base-medium)',
-          },
-          [screenLargeMediaQuery]: {
-            fontSize: 'var(--fs-base-large)',
-            lineHeight: 'var(--lh-base-large)',
-          },
-        },
-        '.text-h1-super-responsive': {
-          fontSize: 'var(--fs-h1-super)',
-          lineHeight: 'var(--lh-h1-super)',
-          [screenMediumMediaQuery]: {
-            fontSize: 'var(--fs-h1-super-medium)',
-            lineHeight: 'var(--lh-h1-super-medium)',
-          },
-          [screenLargeMediaQuery]: {
-            fontSize: 'var(--fs-h1-super-large)',
-            lineHeight: 'var(--lh-h1-super-large)',
-          },
-        },
-        '.text-h1-responsive': {
-          fontSize: 'var(--fs-h1)',
-          lineHeight: 'var(--lh-h1)',
-          [screenMediumMediaQuery]: {
-            fontSize: 'var(--fs-h1-medium)',
-            lineHeight: 'var(--lh-h1-medium)',
-          },
-          [screenLargeMediaQuery]: {
-            fontSize: 'var(--fs-h1-large)',
-            lineHeight: 'var(--lh-h1-large)',
-          },
-        },
-        '.text-h2-responsive': {
-          fontSize: 'var(--fs-h2)',
-          lineHeight: 'var(--lh-h2)',
-          [screenMediumMediaQuery]: {
-            fontSize: 'var(--fs-h2-medium)',
-            lineHeight: 'var(--lh-h2-medium)',
-          },
-          [screenLargeMediaQuery]: {
-            fontSize: 'var(--fs-h2-large)',
-            lineHeight: 'var(--lh-h2-large)',
-          },
-        },
-        '.text-h3-responsive': {
-          fontSize: 'var(--fs-h3)',
-          lineHeight: 'var(--lh-h3)',
-          [screenMediumMediaQuery]: {
-            fontSize: 'var(--fs-h3-medium)',
-            lineHeight: 'var(--lh-h3-medium)',
-          },
-          [screenLargeMediaQuery]: {
-            fontSize: 'var(--fs-h3-large)',
-            lineHeight: 'var(--lh-h3-large)',
-          },
-        },
-        '.text-h4-responsive': {
-          fontSize: 'var(--fs-h4)',
-          lineHeight: 'var(--lh-h4)',
-          [screenMediumMediaQuery]: {
-            fontSize: 'var(--fs-h4-medium)',
-            lineHeight: 'var(--lh-h4-medium)',
-          },
-          [screenLargeMediaQuery]: {
-            fontSize: 'var(--fs-h4-large)',
-            lineHeight: 'var(--lh-h4-large)',
-          },
-        },
-        '.text-h5-responsive': {
-          fontSize: 'var(--fs-h5)',
-          lineHeight: 'var(--lh-h5)',
-          [screenMediumMediaQuery]: {
-            fontSize: 'var(--fs-h5-medium)',
-            lineHeight: 'var(--lh-h5-medium)',
-          },
-          [screenLargeMediaQuery]: {
-            fontSize: 'var(--fs-h5-large)',
-            lineHeight: 'var(--lh-h5-large)',
-          },
-        },
-        '.text-h6-responsive': {
-          fontSize: 'var(--fs-h6)',
-          lineHeight: 'var(--lh-h6)',
-          [screenMediumMediaQuery]: {
-            fontSize: 'var(--fs-h6-medium)',
-            lineHeight: 'var(--lh-h6-medium)',
-          },
-          [screenLargeMediaQuery]: {
-            fontSize: 'var(--fs-h6-large)',
-            lineHeight: 'var(--lh-h6-large)',
-          },
-        },
-      };
+			const responsiveText = {
+				'.text-base-responsive': {
+					fontSize: 'var(--fs-base)',
+					lineHeight: 'var(--lh-base)',
+					[screenMediumMediaQuery]: {
+						fontSize: 'var(--fs-base-medium)',
+						lineHeight: 'var(--lh-base-medium)'
+					},
+					[screenLargeMediaQuery]: {
+						fontSize: 'var(--fs-base-large)',
+						lineHeight: 'var(--lh-base-large)'
+					}
+				},
+				'.text-h1-super-responsive': {
+					fontSize: 'var(--fs-h1-super)',
+					lineHeight: 'var(--lh-h1-super)',
+					[screenMediumMediaQuery]: {
+						fontSize: 'var(--fs-h1-super-medium)',
+						lineHeight: 'var(--lh-h1-super-medium)'
+					},
+					[screenLargeMediaQuery]: {
+						fontSize: 'var(--fs-h1-super-large)',
+						lineHeight: 'var(--lh-h1-super-large)'
+					}
+				},
+				'.text-h1-responsive': {
+					fontSize: 'var(--fs-h1)',
+					lineHeight: 'var(--lh-h1)',
+					[screenMediumMediaQuery]: {
+						fontSize: 'var(--fs-h1-medium)',
+						lineHeight: 'var(--lh-h1-medium)'
+					},
+					[screenLargeMediaQuery]: {
+						fontSize: 'var(--fs-h1-large)',
+						lineHeight: 'var(--lh-h1-large)'
+					}
+				},
+				'.text-h2-responsive': {
+					fontSize: 'var(--fs-h2)',
+					lineHeight: 'var(--lh-h2)',
+					[screenMediumMediaQuery]: {
+						fontSize: 'var(--fs-h2-medium)',
+						lineHeight: 'var(--lh-h2-medium)'
+					},
+					[screenLargeMediaQuery]: {
+						fontSize: 'var(--fs-h2-large)',
+						lineHeight: 'var(--lh-h2-large)'
+					}
+				},
+				'.text-h3-responsive': {
+					fontSize: 'var(--fs-h3)',
+					lineHeight: 'var(--lh-h3)',
+					[screenMediumMediaQuery]: {
+						fontSize: 'var(--fs-h3-medium)',
+						lineHeight: 'var(--lh-h3-medium)'
+					},
+					[screenLargeMediaQuery]: {
+						fontSize: 'var(--fs-h3-large)',
+						lineHeight: 'var(--lh-h3-large)'
+					}
+				},
+				'.text-h4-responsive': {
+					fontSize: 'var(--fs-h4)',
+					lineHeight: 'var(--lh-h4)',
+					[screenMediumMediaQuery]: {
+						fontSize: 'var(--fs-h4-medium)',
+						lineHeight: 'var(--lh-h4-medium)'
+					},
+					[screenLargeMediaQuery]: {
+						fontSize: 'var(--fs-h4-large)',
+						lineHeight: 'var(--lh-h4-large)'
+					}
+				},
+				'.text-h5-responsive': {
+					fontSize: 'var(--fs-h5)',
+					lineHeight: 'var(--lh-h5)',
+					[screenMediumMediaQuery]: {
+						fontSize: 'var(--fs-h5-medium)',
+						lineHeight: 'var(--lh-h5-medium)'
+					},
+					[screenLargeMediaQuery]: {
+						fontSize: 'var(--fs-h5-large)',
+						lineHeight: 'var(--lh-h5-large)'
+					}
+				},
+				'.text-h6-responsive': {
+					fontSize: 'var(--fs-h6)',
+					lineHeight: 'var(--lh-h6)',
+					[screenMediumMediaQuery]: {
+						fontSize: 'var(--fs-h6-medium)',
+						lineHeight: 'var(--lh-h6-medium)'
+					},
+					[screenLargeMediaQuery]: {
+						fontSize: 'var(--fs-h6-large)',
+						lineHeight: 'var(--lh-h6-large)'
+					}
+				}
+			};
 
-      addUtilities(responsiveText);
-      })
-  ]
+			addUtilities(responsiveText);
+		})
+	]
 };

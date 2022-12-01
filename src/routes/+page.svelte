@@ -1,27 +1,98 @@
 <script>
-  import portrait from '$lib/assets/portrait.jpg';
 	import SocialIcons from '$lib/components/SocialIcons.svelte';
-  import "../app.css";
+	import LargeCard from '$lib/components/LargeCard.svelte';
+	import portrait from '$lib/assets/portrait.png';
+	import '../app.css';
 </script>
 
-<div class="w-full h-screen p-4">
-  <div class="container flex flex-col lg:flex-row rounded-lg max-w-[1100px] lg:max-h-[650px] relative top-1/2 -translate-y-1/2 lg:mx-auto border-solid border border-primary">
-    <img class="portrait p-4 rounded-3xl lg:w-auto max-h-[33rem] self-center m-0 lg:m-12 lg:mr-0" alt="portrait of Josh Mabry" src={portrait} />
-    <div class="hero-menu flex flex-col self-center w-full lg:w-1/2 mx-2 lg:mx-12">
-      <h1 class="text-primary text-center text-4xl lg:text-7xl font-serif font-light w-full my-4">Josh Mabry</h1>
-      <ul class="flex flex-col items-center w-full lg:mt-6 lg:mb-8 font-sans font-light">
-        <li class="text-center text-primary text-lg lg:text-2xl my-1">Developer</li>
-        <li class="text-center text-primary text-lg lg:text-2xl my-1">Designer</li>
-        <li class="text-center text-primary text-lg lg:text-2xl my-1">Artist</li>
-      </ul>
-      <SocialIcons />
-    </div>
-  </div>
+<div class="portrait-wrapper">
+	<img class="portrait" alt="portrait of Josh Mabry" src={portrait} />
+</div>
+<div class="hero-menu">
+	<h1 class="text-h1-responsive">Josh Mabry</h1>
+	<ul class="hero-menu-links">
+		<li class="hero-menu-link--item">Developer</li>
+		<li class="hero-menu-link--item">Designer</li>
+		<li class="hero-menu-link--item">Artist</li>
+	</ul>
+	<span class="social-links">
+		<SocialIcons />
+	</span>
 </div>
 
-
 <style>
-  .portrait {
-    border-radius: 1.75rem;
-  }
+	/* .portrait-wrapper {
+    @apply object-cover;
+    @apply flex justify-center;
+    @apply w-full;
+    @apply h-[300px];
+    @apply bg-primary;
+  } */
+	.portrait {
+		@apply object-cover m-auto my-6;
+		border-radius: 0.5rem;
+		@apply w-[300px] h-[300px];
+		@apply bg-primary;
+	}
+
+	.hero-menu {
+		@apply flex flex-col flex-grow;
+		@apply justify-center;
+		@apply text-center;
+		@apply self-center w-full lg:w-1/2 mx-2 lg:mt-6 my-4;
+	}
+
+	.hero-menu-link--item {
+		@apply text-primary text-lg lg:text-2xl my-1 underline cursor-pointer;
+		@apply font-sans font-light;
+		@apply hover:text-secondary;
+	}
+
+	.social-links {
+		@apply mt-4 mb-8 lg:my-0;
+	}
+
+	@screen sm {
+		.hero-menu {
+			@apply ml-7 mt-8;
+		}
+
+		.hero-menu-link--item {
+			@apply my-0;
+		}
+
+		.portrait {
+			@apply w-full h-full m-0 mr-32;
+		}
+	}
+
+	@screen md {
+		.hero-menu {
+			@apply ml-2 mt-2;
+		}
+		.hero-menu-links {
+			@apply m-1;
+		}
+		.hero-menu-link--item {
+			/* @apply my-2;  */
+		}
+		.portrait {
+			@apply mr-48;
+		}
+	}
+
+	@screen lg {
+		.hero-menu {
+			@apply ml-10 mt-2;
+		}
+		.hero-menu-links {
+			@apply m-4;
+		}
+		.hero-menu-link--item {
+			@apply my-2;
+		}
+		.portrait {
+			@apply mr-0;
+		}
+	}
 </style>

@@ -1,15 +1,49 @@
+@import './theme.css';
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --color-bg: #121212;
-  --color-primary: #D2ECFF;
-  --color-secondary: #134562;
+body {
+	height: 100vh;
+	margin: 0;
+	background-color: var(--color-bg);
+	position: relative;
 }
 
-body {
-  height: 100vh;
-  margin: 0;
-  background-color: var(--color-bg);
+h1 {
+	@apply text-primary text-center font-serif font-light;
+}
+
+.container {
+	max-width: calc(100% - 2rem);
+	margin: 0 auto;
+}
+
+.portrait {
+	@apply lg:w-auto m-4 lg:mr-0;
+}
+
+@screen xs {
+	.container {
+		max-width: calc(100% - 6rem);
+	}
+}
+
+@screen sm {
+	.container {
+		max-width: calc(100% - 4rem);
+	}
+}
+
+@screen md {
+	.container {
+		max-width: calc(100% - 8rem);
+	}
+}
+
+@screen xl {
+	.container {
+		@apply w-full;
+		@apply max-w-[1200px] lg:max-h-[800px];
+	}
 }
