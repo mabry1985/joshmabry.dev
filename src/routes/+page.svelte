@@ -1,6 +1,5 @@
 <script>
 	import SocialIcons from '$lib/components/SocialIcons.svelte';
-	import LargeCard from '$lib/components/LargeCard.svelte';
 	import portrait from '$lib/assets/portrait.png';
 	import '../app.css';
 </script>

@@ -1,12 +1,11 @@
 <script>
-	import '../app.css';
-	import logo from '$lib/assets/logo.svg';
-	import menu from '$lib/assets/menu.svg';
-
 	import Hamburger from '$lib/components/Hamburger.svelte';
 	import Menu from '$lib/components/Menu.svelte';
+	import logo from '$lib/assets/logo.svg';
+	import '../app.css';
 
 	let open;
+
 </script>
 
 <div class="w-full h-screen container">
