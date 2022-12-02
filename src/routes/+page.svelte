@@ -1,18 +1,21 @@
 <script>
 	import SocialIcons from '$lib/components/SocialIcons.svelte';
+	import { menuData } from '$lib/data/menu-data';
 	import portrait from '$lib/assets/portrait.png';
 	import '../app.css';
 </script>
 
-<div class="portrait-wrapper">
-	<img class="portrait" alt="portrait of Josh Mabry" src={portrait} />
-</div>
+<img class="portrait" alt="portrait of Josh Mabry" src={portrait} />
 <div class="hero-menu">
 	<h1 class="text-h1-responsive">Josh Mabry</h1>
 	<ul class="hero-menu-links">
-		<li class="hero-menu-link--item">Developer</li>
-		<li class="hero-menu-link--item">Designer</li>
-		<li class="hero-menu-link--item">Artist</li>
+		{#each menuData as link, i}
+			{#if i < 3}
+				<li class="hero-menu-link--item">
+					<a data-sveltekit-reload href={link.url} alt={link.alt}>{link.title}</a>
+				</li>
+			{/if}
+		{/each}
 	</ul>
 	<span class="social-links">
 		<SocialIcons />
@@ -20,20 +23,6 @@
 </div>
 
 <style>
-	/* .portrait-wrapper {
-    @apply object-cover;
-    @apply flex justify-center;
-    @apply w-full;
-    @apply h-[300px];
-    @apply bg-primary;
-  } */
-	.portrait {
-		@apply object-cover m-auto my-6;
-		border-radius: 0.5rem;
-		@apply w-[300px] h-[300px];
-		@apply bg-primary;
-	}
-
 	.hero-menu {
 		@apply flex flex-col flex-grow;
 		@apply justify-center;
@@ -42,9 +31,9 @@
 	}
 
 	.hero-menu-link--item {
-		@apply text-primary text-lg lg:text-2xl my-1 underline cursor-pointer;
-		@apply font-sans font-light;
-		@apply hover:text-secondary;
+		@apply text-primary text-lg lg:text-2xl my-1 underline cursor-pointer transition-colors duration-300;
+		@apply font-sans font-light uppercase;
+		@apply hover:text-secondary hover:no-underline;
 	}
 
 	.social-links {
@@ -59,10 +48,6 @@
 		.hero-menu-link--item {
 			@apply my-0;
 		}
-
-		.portrait {
-			@apply w-full h-full m-0 mr-32;
-		}
 	}
 
 	@screen md {
@@ -71,12 +56,6 @@
 		}
 		.hero-menu-links {
 			@apply m-1;
-		}
-		.hero-menu-link--item {
-			/* @apply my-2;  */
-		}
-		.portrait {
-			@apply mr-48;
 		}
 	}
 
@@ -89,9 +68,6 @@
 		}
 		.hero-menu-link--item {
 			@apply my-2;
-		}
-		.portrait {
-			@apply mr-0;
 		}
 	}
 </style>
