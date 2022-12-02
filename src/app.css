@@ -32,7 +32,7 @@ br {
 }
 
 .portrait {
-	@apply object-cover m-auto my-6;
+	@apply object-cover m-auto my-6 aspect-square;
 	border-radius: 0.5rem;
 	@apply bg-primary;
 }
@@ -49,13 +49,16 @@ br {
 	}
 
 	.portrait {
-		@apply m-0 w-[50%];
+		@apply m-0;
 	}
 }
 
 @screen md {
 	.container {
 		max-width: calc(100% - 8rem);
+	}
+	.portrait {
+		@apply w-[40%] aspect-[1/1.25];
 	}
 }
 
@@ -64,4 +67,6 @@ br {
 		@apply w-full;
 		@apply max-w-[1200px] lg:max-h-[800px];
 	}
+
+
 }
