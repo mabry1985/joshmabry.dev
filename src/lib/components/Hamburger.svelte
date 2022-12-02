@@ -1,13 +1,44 @@
-<script>
+<script type="ts">
 	export let open = false;
+	import { onMount } from 'svelte';
+
+	onMount(() => {
+		document.addEventListener('keydown', (e) => {
+			if (e.key === 'Escape') {
+				open = false;
+			}
+		});
+
+		const hamburger = document.querySelector('.hamburger');
+		const hamburgerBox = document.querySelector('.hamburger-box');
+
+		document.addEventListener('click', (evt) => {
+			const flyoutEl = document.getElementById('menu');
+			const hamburgerIsActive = document.getElementById('hamburger-menu-active');
+			let targetEl = evt.target;
+
+			do {
+				if (targetEl == flyoutEl) {
+					return;
+				} else if (hamburgerIsActive && (targetEl == hamburger || targetEl == hamburgerBox)) {
+					open = false;
+					return;
+				} else if (targetEl == hamburger || targetEl == hamburgerBox) {
+					open = true;
+					return;
+				}
+				targetEl = targetEl!.parentNode;
+			} while (targetEl && open);
+			open = false;
+		});
+	});
 </script>
 
 <button
 	class="hamburger hamburger--collapse"
+	id={open ? 'hamburger-menu-active' : ''}
 	aria-label="Hamburger menu"
 	class:is-active={open}
-	on:click
-	on:click={() => (open = !open)}
 >
 	<span class="hamburger-box">
 		<span class="hamburger-inner" />
@@ -27,6 +58,7 @@
 		border: 0;
 		margin: 0;
 		overflow: visible;
+		line-height: 0;
 	}
 	.hamburger:active {
 		background-color: transparent !important;
@@ -45,6 +77,7 @@
 	}
 
 	.hamburger-inner {
+		@apply pointer-events-none;
 		display: block;
 		top: 50%;
 		margin-top: var(--layer-height, 4px) / -2;
@@ -71,6 +104,10 @@
 	}
 	.hamburger-inner::after {
 		bottom: calc((var(--layer-spacing, 6px) + var(--layer-height, 4px)) * -1);
+	}
+
+	.hamburger:hover {
+		@apply text-secondary;
 	}
 
 	/*
