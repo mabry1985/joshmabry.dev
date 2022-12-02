@@ -33,7 +33,7 @@
 		content: '';
 	}
 
-	@screen sm {
+	@screen md {
 		main {
 			@apply flex-row pr-0;
 		}
