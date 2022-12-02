@@ -21,16 +21,17 @@
 		class="menu"
 		transition:fly|local={{ x: 15, duration: 300, delay: 0 }}
 	>
+		<h2 />
 		<nav>
-			<span
-				class="text-h4-responsive font-serif mb-2"
-				aria-hidden="true"
-				transition:fly={{ x: 15, delay: 5, duration: 350 }}>Josh Mabry</span
-			>
 			<ul>
+				<li transition:fly={{ x: 15, delay: 5, duration: 350 }}>
+					<a id="menu-title-link" aria-label="goto homepage" href="/">Josh Mabry</a>
+				</li>
 				{#each menuData as link}
 					<li transition:fly={{ x: 15, delay: 5, duration: 350 }}>
-						<a data-sveltekit-reload href={link.url} alt={link.alt}>{link.title}</a>
+						<a class="flyout-link" data-sveltekit-reload href={link.url} alt={link.alt}
+							>{link.title}</a
+						>
 					</li>
 				{/each}
 			</ul>
@@ -47,6 +48,10 @@
 		width: calc(100%);
 	}
 
+	#menu-title-link {
+		@apply font-serif mb-4 no-underline text-h4-responsive;
+	}
+
 	nav {
 		@apply flex flex-col justify-center h-full rounded-lg;
 		@apply m-6;
@@ -61,12 +66,12 @@
 		@apply mb-2;
 	}
 
-	a {
+	.flyout-link {
 		@apply uppercase underline font-light transition-colors duration-300;
 		cursor: pointer;
 		width: max-content;
 	}
-	a:hover {
+	.flyout-link:hover {
 		@apply text-secondary;
 		text-decoration: none;
 	}

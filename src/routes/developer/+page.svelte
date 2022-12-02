@@ -8,7 +8,7 @@
 	src={developerPortrait}
 />
 
-<article class="m-8 mt-12">
+<article class="m-2 mt-6 sm:m-8 sm:mt-12">
 	<h1 class="text-h1-responsive mb-8">Developer</h1>
 	<p>
 		When I first realized my love for coding, I couldn't believe I hadn't discovered it sooner. I
@@ -17,10 +17,10 @@
 		looking for ways to improve the experience of the user.
 	</p>
 	<p>
-		My skillset is full-stack and I'm comfortable working with a variety of technologies, but my
-		passion is in front-end development and user experience. I love component based architecture and
-		modular systems and I'm always keeping up with the latest trends and technologies. It's a
-		bottomless well of knowledge and I can't wait to see what I learn next.
+		My experience covers the entire stack and I'm comfortable working with a variety of
+		technologies, but my passion is in front-end development and user experience. I love component
+		based architecture and modular systems and I'm always keeping up on the latest trends and
+		technologies. It's a bottomless well of knowledge and I can't wait to see what I learn next.
 	</p>
 
 	<p>

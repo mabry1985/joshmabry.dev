@@ -1,4 +1,4 @@
-<script type='ts'>
+<script type="ts">
 	import Hamburger from '$lib/components/Hamburger.svelte';
 	import Menu from '$lib/components/Menu.svelte';
 	import logo from '$lib/assets/logo.svg';
@@ -21,9 +21,8 @@
 
 <style>
 	main {
-		@apply border-solid border border-primary rounded-lg relative overflow-hidden p-4 pr-0;
+		@apply border-solid border border-primary rounded-lg relative overflow-hidden p-4;
 		@apply flex flex-col;
-		max-height: calc(100vh - 4rem);
 	}
 
 	main.is-active::before {
@@ -36,7 +35,7 @@
 
 	@screen sm {
 		main {
-			@apply flex-row;
+			@apply flex-row pr-0;
 		}
 	}
 </style>

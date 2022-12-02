@@ -8,7 +8,7 @@
 	src={designerPortrait}
 />
 
-<article class="m-8 mt-12">
+<article class="m-2 mt-6 sm:m-8 sm:mt-12">
 	<h1 class="text-h1-responsive mb-8">Designer</h1>
 	<p>
 		Design takes two of my passions; art and technology, and combines them into one. I love being

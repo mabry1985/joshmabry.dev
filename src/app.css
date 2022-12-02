@@ -49,7 +49,7 @@ br {
 	}
 
 	.portrait {
-		@apply m-0;
+		@apply m-0 w-[50%];
 	}
 }
 
