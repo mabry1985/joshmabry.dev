@@ -14,13 +14,27 @@ h1 {
 	@apply text-primary text-center font-serif font-light;
 }
 
+p {
+	@apply text-primary font-sans font-light mb-4;
+}
+
+br {
+	@apply mb-8;
+}
+
 .container {
 	max-width: calc(100% - 2rem);
 	margin: 0 auto;
 }
 
+.inline-link {
+	@apply text-primary font-sans font-light underline hover:text-secondary transition-colors duration-300;
+}
+
 .portrait {
-	@apply lg:w-auto m-4 lg:mr-0;
+	@apply object-cover m-auto my-6;
+	border-radius: 0.5rem;
+	@apply bg-primary;
 }
 
 @screen xs {
@@ -32,6 +46,10 @@ h1 {
 @screen sm {
 	.container {
 		max-width: calc(100% - 4rem);
+	}
+
+	.portrait {
+		@apply m-0;
 	}
 }
 
