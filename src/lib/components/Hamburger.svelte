@@ -15,7 +15,7 @@
 		document.addEventListener('click', (evt) => {
 			const flyoutEl = document.getElementById('menu');
 			const hamburgerIsActive = document.getElementById('hamburger-menu-active');
-			let targetEl = evt.target;
+			let targetEl = evt.target as ParentNode | null;
 
 			do {
 				if (targetEl == flyoutEl) {

@@ -4,7 +4,7 @@
 	import { fly } from 'svelte/transition';
 </script>
 
-<div class="flex flex-row justify-center" transition:fly={{ x: 25, delay: 0, duration: 300 }}>
+<div id='social-icons' class="flex flex-row justify-center" transition:fly={{ x: 25, delay: 0, duration: 300 }}>
 	<a
 		href="https://github.com/mabry1985"
 		class="mx-2"

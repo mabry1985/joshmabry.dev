@@ -1,9 +1,9 @@
-<script>
+<script type='ts'>
 	import Hamburger from '$lib/components/Hamburger.svelte';
 	import Menu from '$lib/components/Menu.svelte';
 	import logo from '$lib/assets/logo.svg';
 	import '../app.css';
-	let open;
+	let open: boolean;
 </script>
 
 <div class="w-full h-screen container">

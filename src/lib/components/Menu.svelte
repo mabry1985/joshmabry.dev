@@ -3,8 +3,6 @@
 	import { fly } from 'svelte/transition';
 	import SocialIcons from './SocialIcons.svelte';
 
-	let menuFlyout: HTMLElement;
-
 	const handleFocus = (): undefined => {
 		const icons = document.getElementById('social-icons');
 		icons?.lastChild?.addEventListener('focusout', () => {
@@ -13,7 +11,7 @@
 		return;
 	};
 
-	export let open: Boolean;
+	export let open: boolean;
 </script>
 
 {#if open}
