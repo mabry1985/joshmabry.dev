@@ -1,22 +1,38 @@
-<script>
+<script lang="ts">
+	import { menuData } from '$lib/data/menu-data';
 	import { fly } from 'svelte/transition';
 	import SocialIcons from './SocialIcons.svelte';
 
-	export let open;
+	let menuFlyout: HTMLElement;
+
+	const handleFocus = (): undefined => {
+		const icons = document.getElementById('social-icons');
+		icons?.lastChild?.addEventListener('focusout', () => {
+			open = false;
+		});
+		return;
+	};
+
+	export let open: Boolean;
 </script>
 
 {#if open}
-	<div class="menu" transition:fly={{ x: 25, duration: 300 }}>
+	<div
+		id="menu"
+		on:focus={handleFocus()}
+		class="menu"
+		transition:fly|local={{ x: 15, duration: 300, delay: 0 }}
+	>
 		<nav>
 			<span
 				class="text-h4-responsive font-serif mb-2"
 				aria-hidden="true"
-				transition:fly={{ x: 25, delay: 0, duration: 300 }}>Josh Mabry</span
+				transition:fly={{ x: 15, delay: 5, duration: 350 }}>Josh Mabry</span
 			>
 			<ul>
-				{#each ['Developer', 'Designer', 'Artist', 'Blog', 'About'] as link, i}
-					<li transition:fly={{ x: 25, delay: 0, duration: 300 }}>
-						<a href="#">{link}</a>
+				{#each menuData as link}
+					<li transition:fly={{ x: 15, delay: 5, duration: 350 }}>
+						<a data-sveltekit-reload href={link.url} alt={link.alt}>{link.title}</a>
 					</li>
 				{/each}
 			</ul>
@@ -28,10 +44,11 @@
 
 <style>
 	.menu {
-		@apply text-primary font-sans absolute -right-1 -top-1 h-full bg-dark w-screen;
+		@apply text-primary font-sans absolute right-0 top-0 h-full bg-dark w-screen overflow-hidden;
 		text-align: center;
 		width: calc(100%);
 	}
+
 	nav {
 		@apply flex flex-col justify-center h-full rounded-lg;
 		@apply m-6;
@@ -45,13 +62,15 @@
 	nav ul {
 		@apply mb-2;
 	}
+
 	a {
-		@apply uppercase underline font-light py-2;
+		@apply uppercase underline font-light transition-colors duration-300;
 		cursor: pointer;
 		width: max-content;
 	}
 	a:hover {
-		text-decoration: underline;
+		@apply text-secondary;
+		text-decoration: none;
 	}
 
 	@screen xs {
