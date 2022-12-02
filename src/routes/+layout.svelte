@@ -3,19 +3,17 @@
 	import Menu from '$lib/components/Menu.svelte';
 	import logo from '$lib/assets/logo.svg';
 	import '../app.css';
-
 	let open;
-
 </script>
 
 <div class="w-full h-screen container">
 	<header class="flex justify-end sm:justify-between py-3 md:py-5">
-		<a href="/" class="hidden sm:inline-block" aria-label="home page">
+		<a data-sveltekit-reload href="/" class="hidden sm:inline-block" aria-label="home page">
 			<img class="text-primary w-8 h-8" src={logo} aria-hidden alt="linkedin icon" />
 		</a>
 		<Hamburger bind:open />
 	</header>
-	<main>
+	<main class:is-active={open}>
 		<Menu bind:open />
 		<slot />
 	</main>
@@ -23,22 +21,22 @@
 
 <style>
 	main {
-		@apply border-solid border border-primary rounded-lg relative overflow-hidden;
+		@apply border-solid border border-primary rounded-lg relative overflow-hidden p-4 pr-0;
 		@apply flex flex-col;
 		max-height: calc(100vh - 4rem);
 	}
 
-	@screen sm {
-		main {
-			@apply flex-row p-4 pr-0;
-		}
+	main.is-active::before {
+		@apply absolute top-0 left-0 w-full h-full;
+		@apply bg-dark;
+		@apply opacity-50;
+		@apply transition-opacity duration-300;
+		content: '';
 	}
 
-	@screen md {
+	@screen sm {
 		main {
-			/* @apply lg:mx-auto; */
-			/* @apply relative top-1/2 -translate-y-1/2; */
-			@apply flex-row p-4;
+			@apply flex-row;
 		}
 	}
 </style>
