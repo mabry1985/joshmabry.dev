@@ -67,6 +67,4 @@ br {
 		@apply w-full;
 		@apply max-w-[1200px] lg:max-h-[800px];
 	}
-
-
 }
