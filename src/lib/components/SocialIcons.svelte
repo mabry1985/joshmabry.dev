@@ -21,6 +21,16 @@
 		rel="noreferrer"
 		aria-label="Josh Mabry's Linkedin page"
 	>
-		<img class="text-primary w-8 h-8" src={linkedin} aria-hidden alt="linkedin icon" />
+		<img class="icon" src={linkedin} aria-hidden alt="linkedin icon" />
 	</a>
 </div>
+
+<style>
+	img.icon {
+		@apply w-8 h-8 text-primary;
+	}
+
+	img.icon:hover {
+		@apply shadow-sm;
+	}
+</style>
