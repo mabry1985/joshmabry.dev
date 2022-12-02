@@ -9,10 +9,9 @@
 />
 
 <article class="m-8 mt-12">
-	<h1 class="text-h1-responsive mb-8">Designer</h1>
+	<h1 class="text-h1-responsive mb-8">Artist</h1>
 	<p>
-		As a child you could always find me lost in thought creating imaginary worlds. Using crayons and
-		play-doh, lincolns and legos, I would build up the world around me as I saw fit.
+		As a child you could always find me lost in thought creating imaginary worlds. Using crayons and play-doh, lincoln logs and legos, I would build up the world around me as I saw fit.
 	</p>
 
 	<p>
