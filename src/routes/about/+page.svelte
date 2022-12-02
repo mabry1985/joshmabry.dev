@@ -13,8 +13,8 @@
 	<p>👋🏻 Hello, I'm Josh Mabry and I like to make stuff!</p>
 
 	<p>
-		Born and raised in the Pacific Northwest, I still reside in Portland, Oregon. We've got great
-		nature with in arms reach and some of the best beer and food in the world.
+		Born and raised in the Pacific Northwest, I still reside in Portland, Oregon. Here we've got great
+		nature within arms reach and some of the best beer and food in the world.
 	</p>
 
 	<p>
@@ -25,7 +25,7 @@
 	<p>
 		For business inquiries, you can email me at <a
 			class="inline-link"
-			href="@mailto:mabrycodes@gmail.com">mabrycodes@gmail.com</a
+			href="mailto:mabrycodes@gmail.com">mabrycodes@gmail.com</a
 		>
 	</p>
 
