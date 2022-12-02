@@ -58,7 +58,7 @@ br {
 		max-width: calc(100% - 8rem);
 	}
 	.portrait {
-		@apply w-[40%] aspect-[1/1.25];
+		@apply w-[40%] aspect-[1/1.25] min-w-[40%];
 	}
 }
 
