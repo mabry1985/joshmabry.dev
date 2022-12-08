@@ -11,25 +11,15 @@
 <article class="m-2 mt-6 sm:m-8 sm:mt-12">
 	<h1 class="text-h1-responsive mb-8">Artist</h1>
 	<p>
-		As a child you could always find me lost in thought creating imaginary worlds. Using crayons and
-		play-doh, lincoln logs and legos, I would build up the world around me as I saw fit.
+		As a child, my imagination was my playground. Using crayons, play-doh, lincoln logs, and legos, I would create my own worlds and fill them with my own creations. I loved the ability to bring my ideas to life and share them with others.
 	</p>
 
 	<p>
-		I loved the ability to pull something from your mind and put it into the world for others to
-		see. As I've grown, I've never lost that passion. You can still find me lost in thought creating
-		imaginary worlds, but the tools and the mediums have evolved beyond scented markers and paper
-		mache.
+		As I've grown, my passions have evolved and my tools have become more sophisticated. I've explored music, woodworking, metalsmithing, 3D modeling, web development, game development, and even AI-assisted design. But my love for creating and bringing ideas to life has never wavered.
 	</p>
 
 	<p>
-		I've gone from music to woodworking, metalsmithing to 3D modelling, web development to game
-		development, and as of late I've been using AI assisted tools to inform my creations.
-	</p>
-
-	<p>
-		Being able to leverage these creative abilities through my work as a developer and designer is a
-		gift that I am thankful for daily.
+		I'm grateful to have the opportunity to use my creative talents in my work as a developer and designer. It's a gift that I cherish every day.
 	</p>
 
 	<strong class="text-center text-red-300">(PORTFOLIO COMING SOON)</strong>

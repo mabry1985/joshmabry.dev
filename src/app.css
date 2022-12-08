@@ -32,7 +32,7 @@ br {
 }
 
 .portrait {
-	@apply object-cover m-auto my-6 aspect-square;
+	@apply object-cover md:m-auto md:my-6 aspect-square;
 	border-radius: 0.5rem;
 	@apply bg-primary;
 }

@@ -10,16 +10,12 @@
 
 <article class="m-8 mt-12">
 	<h1 class="text-h1-responsive mb-8">About Me</h1>
-	<p>👋🏻 Hello, I'm Josh Mabry and I like to make stuff!</p>
-
 	<p>
-		Born and raised in the Pacific Northwest, I still reside in Portland, Oregon. Here we've got great
-		nature within arms reach and some of the best beer and food in the world.
+		Hi, I'm Josh Mabry. I'm originally from Portland, Oregon, where I still reside. I enjoy living in the Pacific Northwest, where we have access to great nature and some of the best food and beer in the world.
 	</p>
 
 	<p>
-		When I'm not coding, you can find me playing videogames, sim-racing in VR, or enjoying a nice
-		meal with my wife
+		When I'm not working, I enjoy playing making art, playing games, and spending time with my wife. I'm also an avid foodie and I thing there is nothing better than a nice meal with good people.
 	</p>
 
 	<p>

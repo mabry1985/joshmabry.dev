@@ -11,18 +11,26 @@
 <article class="m-2 mt-6 sm:m-8 sm:mt-12">
 	<h1 class="text-h1-responsive mb-8">Developer</h1>
 	<p>
-		When I first realized my love for coding, I couldn't believe I hadn't discovered it sooner. I
-		enjoy the problem solving, the creativity, and the ability to build something that can be used
-		by others. I aim to incorporate accessibility and inclusivity into my work, and I'm always
-		looking for ways to improve the experience of the user.
+		As soon as I began coding, I was hooked. I love the challenge of solving complex problems, the
+		thrill of creating something new, and the satisfaction of building something that can be used by
+		others. My goal is to make my work as accessible and inclusive as possible, and I'm always
+		looking for ways to enhance the user experience.
 	</p>
 	<p>
-		My experience covers the entire stack and I'm comfortable working with a variety of
-		technologies, but my passion is in front-end development and user experience. I love component
-		based architecture and modular systems and I'm always keeping up on the latest trends and
-		technologies. It's a bottomless well of knowledge and I can't wait to see what I learn next.
+		I'm passionate about front-end development and user experience, and I have a deep understanding
+		of component-based architecture and modular systems. I'm also experienced in working with the
+		entire tech stack, from the front end to the back end.
 	</p>
-
+	<p>
+		In addition to staying up-to-date on the latest trends and technologies, I'm a strong believer
+		in the benefits of typed languages and DRY code. I believe that these practices help me to write
+		clean, efficient, and maintainable code, and I'm always looking for ways to improve my skills
+		and techniques in these areas.
+	</p>
+	<p>
+		I'm excited to continue learning and growing in my field, and I'm always open to new challenges
+		and opportunities.
+	</p>
 	<p>
 		You can check out my <a
 			class="inline-link"
@@ -34,7 +42,7 @@
 	</p>
 
 	<p class="w-full">
-		<strong class="text-center text-red-300 my-16">(PORFOLIO COMING SOON)</strong> In the meantime,
+		<strong class="text-center text-red-300 my-16">(PORTFOLIO COMING SOON)</strong> In the meantime,
 		visit my
 		<a
 			class="inline-link"
