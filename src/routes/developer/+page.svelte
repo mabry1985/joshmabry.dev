@@ -19,13 +19,13 @@
 	<p>
 		I'm passionate about front-end development and user experience, and I have a deep understanding
 		of component-based architecture and modular systems. I'm also experienced in working with the
-		entire tech stack, from the front end to the back end.
+		entire tech stack, from design to deployment.
 	</p>
 	<p>
 		In addition to staying up-to-date on the latest trends and technologies, I'm a strong believer
 		in the benefits of typed languages and DRY code. I believe that these practices help me to write
-		clean, efficient, and maintainable code, and I'm always looking for ways to improve my skills
-		and techniques in these areas.
+		clean, efficient, and maintainable programs, and I'm always looking for ways to improve my
+		skills and techniques in these areas.
 	</p>
 	<p>
 		I'm excited to continue learning and growing in my field, and I'm always open to new challenges
@@ -41,9 +41,11 @@
 		for more information and take a look at my portfolio <span class="portfolio-jump-link" />below
 	</p>
 
-	<p class="w-full">
-		<strong class="text-center text-red-300 my-16">(PORTFOLIO COMING SOON)</strong> In the meantime,
-		visit my
+	<p class="w-full text-center">
+		<strong class="text-center text-red-300 my-16 ">(PORTFOLIO COMING SOON)</strong>
+	</p>
+	<p class="w-full text-center">
+		In the meantime, visit my
 		<a
 			class="inline-link"
 			href="https://drive.google.com/file/d/1h9dLckf4omnHjhwYZhxUgN1jrVKRL4uU/view"

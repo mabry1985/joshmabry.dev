@@ -28,13 +28,17 @@ br {
 }
 
 .inline-link {
-	@apply text-primary font-sans font-light underline hover:text-secondary transition-colors duration-300;
+	@apply text-blue-400 font-sans font-light underline hover:no-underline hover:text-secondary transition-colors duration-300;
 }
 
 .portrait {
 	@apply object-cover md:m-auto md:my-6 aspect-square;
 	border-radius: 0.5rem;
 	@apply bg-primary;
+}
+
+.bio-page--title {
+	@apply text-h1-responsive mb-2 sm:mb-6;
 }
 
 @screen xs {

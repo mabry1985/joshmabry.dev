@@ -17,6 +17,6 @@
 	}
 
 	.error-image {
-		@apply self-center rounded-full border border-primary border-solid border-2;
+		@apply self-center rounded-full border-primary border-solid border-2;
 	}
 </style>

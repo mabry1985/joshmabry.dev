@@ -15,7 +15,7 @@
 	</p>
 
 	<p>
-		When I'm not working, I enjoy playing making art, playing games, and spending time with my wife. I'm also an avid foodie and I thing there is nothing better than a nice meal with good people.
+		When I'm not working, I enjoy making art, playing games, and spending time with my wife. I'm also an avid foodie and I thing there is nothing better than a nice meal with good people.
 	</p>
 
 	<p>
