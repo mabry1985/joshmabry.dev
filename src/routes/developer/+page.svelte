@@ -9,7 +9,7 @@
 />
 
 <article class="m-2 mt-6 sm:m-8 sm:mt-12">
-	<h1 class="text-h1-responsive mb-8">Developer</h1>
+	<h1 class="bio-page--title">Developer</h1>
 	<p>
 		As soon as I began coding, I was hooked. I love the challenge of solving complex problems, the
 		thrill of creating something new, and the satisfaction of building something that can be used by

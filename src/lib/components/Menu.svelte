@@ -21,15 +21,14 @@
 		class="menu"
 		transition:fly|local={{ x: 15, duration: 300, delay: 0 }}
 	>
-		<h2 />
 		<nav>
 			<ul>
 				<li transition:fly={{ x: 15, delay: 5, duration: 350 }}>
-					<a id="menu-title-link" aria-label="goto homepage" href="/">Josh Mabry</a>
+					<a id="menu-title-link" data-sveltekit-reload aria-label="goto homepage" href="/" on:click={() => open = false}>Josh Mabry</a>
 				</li>
 				{#each menuData as link}
 					<li transition:fly={{ x: 15, delay: 5, duration: 350 }}>
-						<a class="flyout-link" data-sveltekit-reload href={link.url} alt={link.alt}
+						<a class="flyout-link" data-sveltekit-reload on:click={() => open = false} href={link.url} alt={link.alt}
 							>{link.title}</a
 						>
 					</li>
