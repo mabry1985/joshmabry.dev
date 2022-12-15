@@ -45,6 +45,7 @@
 	.menu {
 		@apply text-primary font-sans absolute right-0 top-0 h-full bg-dark w-screen overflow-hidden;
 		text-align: center;
+		max-height: calc(100vh - 48px);
 		width: calc(100%);
 	}
 
@@ -74,12 +75,6 @@
 	.flyout-link:hover {
 		@apply text-secondary;
 		text-decoration: none;
-	}
-
-	@screen xs {
-		.menu {
-			width: calc(100vw - 6rem);
-		}
 	}
 
 	@screen sm {
