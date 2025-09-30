@@ -13,28 +13,12 @@
 		</div>
 		
 		<div class="header-content">
-			<h1 class="developer-title">AI Systems & Developer Tools</h1>
+			<h1 class="developer-title">My Projects</h1>
 			<p class="developer-intro">
 				Building tools that enhance developer creativity while keeping safety, transparency, and maintainability at the core. 
 				My focus is on AI systems that augment productivity without losing the human element.
 			</p>
 		</div>
-	</div>
-
-	<div class="story-section">
-		<h2 class="story-title">My Journey</h2>
-		<p class="story-text">
-			As soon as I began coding, I was hooked. What started as curiosity about solving problems 
-			evolved into a deep passion for building tools that make other developers' lives better. 
-			I'm fascinated by the intersection of AI and developer experience—how can we use 
-			intelligent systems to enhance creativity rather than replace it?
-		</p>
-		<p class="story-text">
-			At Knapsack, I spend my days building custom RAG pipelines with LangChain, creating 
-			full-stack applications that serve enterprise customers, and constantly exploring new 
-			ways to integrate AI into developer workflows. I believe in writing clean, maintainable 
-			code and building systems that people actually want to use.
-		</p>
 	</div>
 
 	<div class="projects-section">
@@ -153,7 +137,7 @@
 	}
 
 	.developer-title {
-		@apply text-3xl md:text-4xl lg:text-5xl font-light text-primary;
+		@apply text-3xl md:text-4xl lg:text-5xl font-light text-primary text-center md:text-left;
 		@apply tracking-tight leading-tight;
 	}
 
