@@ -11,15 +11,18 @@ body {
 }
 
 h1 {
-	@apply text-primary text-center font-serif font-light;
+	@apply text-primary text-center font-light;
+	font-family: system-ui, -apple-system, sans-serif;
+}
+
+h2, h3, h4, h5, h6 {
+	@apply text-primary font-light;
+	font-family: system-ui, -apple-system, sans-serif;
 }
 
 p {
-	@apply text-primary font-sans font-light mb-4;
-}
-
-br {
-	@apply mb-8;
+	@apply text-gray-300 font-light leading-relaxed mb-6;
+	font-family: system-ui, -apple-system, sans-serif;
 }
 
 .container {
@@ -28,17 +31,18 @@ br {
 }
 
 .inline-link {
-	@apply text-blue-400 font-sans font-light underline hover:no-underline hover:text-secondary transition-colors duration-300;
+	@apply text-primary underline hover:no-underline hover:text-secondary transition-colors duration-300;
 }
 
 .portrait {
 	@apply object-cover md:m-auto md:my-6 aspect-square;
-	border-radius: 0.5rem;
+	border-radius: 1rem;
 	@apply bg-primary;
 }
 
 .bio-page--title {
-	@apply text-h1-responsive mb-2 sm:mb-6;
+	@apply text-3xl md:text-4xl lg:text-5xl font-light text-primary;
+	@apply tracking-tight leading-tight mb-8;
 }
 
 @screen xs {

@@ -43,37 +43,37 @@
 <style>
 	.menu {
 		@apply text-primary font-sans absolute right-0 top-0 h-full bg-dark w-screen overflow-hidden;
+		@apply backdrop-blur-sm;
 		text-align: center;
 		max-height: calc(100vh - 48px);
 		width: calc(100%);
+		background: rgba(18, 18, 18, 0.95);
+		z-index: 20;
 	}
 
 	#menu-title-link {
-		@apply font-serif mb-4 no-underline text-h4-responsive;
+		@apply font-light mb-8 no-underline text-2xl md:text-3xl;
 	}
 
 	nav {
-		@apply flex flex-col justify-center h-full rounded-lg;
-		@apply m-6;
+		@apply flex flex-col justify-center items-center h-full;
+		@apply px-6 py-12;
 		height: calc(100% - 48px);
-		border: solid 2px var(--color-primary);
 	}
+	
 	nav li {
-		@apply my-2;
+		@apply mb-6;
 	}
 
 	nav ul {
-		@apply mb-2;
+		@apply mb-12 space-y-4;
 	}
 
 	.flyout-link {
-		@apply uppercase underline font-light transition-colors duration-300;
+		@apply text-xl font-light transition-colors duration-300;
+		@apply hover:text-secondary no-underline;
 		cursor: pointer;
 		width: max-content;
-	}
-	.flyout-link:hover {
-		@apply text-secondary;
-		text-decoration: none;
 	}
 
 	@screen sm {
